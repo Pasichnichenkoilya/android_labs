@@ -11,5 +11,5 @@ interface ApiInterface {
     suspend fun getUserById(@Path("id") id: Int) : Response<User>
 
     @POST("/users/")
-    suspend fun addUser(@Body user: User) : Response<AddTodoResponse>
+    suspend fun addUser(@Body user: User) : Response<AddUserResponse>
 }
